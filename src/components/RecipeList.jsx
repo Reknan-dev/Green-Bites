@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
-export default function RecipeList({ recipes }) {
+export default function RecipeList() {
+  const recipes = useSelector((state) => state.recipes);
+
   return (
     <div className="grid-recipe">
       {recipes.map((recipe) => (
@@ -19,4 +22,3 @@ export default function RecipeList({ recipes }) {
     </div>
   );
 }
-
