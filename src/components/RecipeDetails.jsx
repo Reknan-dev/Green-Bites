@@ -19,9 +19,9 @@ export default function RecipeDetails() {
       .catch((error) => {
         console.error("Error fetching the recipe details:", error);
       });
-  }, [id]); //
+  }, [id, API_KEY]); //
 
-  if (!recipeDetails) return <div>Loading...</div>;
+  if (!recipeDetails) return <div className="loading">Loading...</div>;
 
   return (
     <div className="recipe-details-container">
