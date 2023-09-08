@@ -19,9 +19,10 @@ export default function SearchBar({ onSearch }) {
         placeholder="What to cook?"
       />
       <button className="search-button" type="submit">
-        <img className='search-icon' src={Search} />
+        <img className='search-icon' src={Search} alt={Search} />
       </button>
     </form>
+    
   );
 }
 

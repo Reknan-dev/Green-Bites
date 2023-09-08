@@ -7,7 +7,6 @@ export default function Header() {
       <img className="logo-image" src= {Logo} />
       <h1 className="title">Green Bites</h1>
     </div>
-    
   );
 }
 

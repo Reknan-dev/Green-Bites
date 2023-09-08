@@ -12,13 +12,28 @@ export const fetchRecipes = createAsyncThunk('recipes/fetchRecipes', async (term
 
 const recipesSlice = createSlice({
   name: 'recipes',
-  initialState: [],
-  reducers: {},
+  initialState: { data: [], status: 'idle', error: null},
+  reducers: {
+    setSearchTerm: (state, action) => {
+      state.searchTerm = action.payload;
+    }
+  },
   extraReducers: (builder) => {
-    builder.addCase(fetchRecipes.fulfilled, (state, action) => {
-      return action.payload;
-    });
-  }
+    builder
+      .addCase(fetchRecipes.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchRecipes.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.data = action.payload;
+        state.error = null;
+      })
+      .addCase(fetchRecipes.rejected, (state, action) => {
+        state.status = 'failed';
+        state.error = action.error.message;
+      });
+  },
 });
 
+export const { setSearchTerm } = recipesSlice.actions;
 export default recipesSlice.reducer;
