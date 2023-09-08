@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <div className="main">
       <div className="banner-container">
-        <img className="banner-image" src={Banner} />
+        <img className="banner-image" src={Banner} alt={Banner} />
         <h1 className="banner-title">
           Want to cook light and tasty? Cook vegetarian!
         </h1>
