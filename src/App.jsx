@@ -12,17 +12,15 @@ import { fetchRecipes, setSearchTerm } from "./slices/recipeSlice";
 import { useNavigate } from "react-router-dom";
 
 
-const API_KEY = "a0d0f0c32af342db80cee5a02d66c55a";
-
 function SearchContainer() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  
   const handleSearch = (term) => {
     dispatch(fetchRecipes(term));
     dispatch(setSearchTerm(term));
     navigate("/");
+    console.log("API Key:", process.env.REACT_APP_SPOONACULAR_API_KEY);
   };
   return <SearchBar onSearch={handleSearch} />;
 }

@@ -6,7 +6,7 @@ import Time from "../images/time.png";
 export default function RecipeDetails() {
   const { id } = useParams();
   const [recipeDetails, setRecipeDetails] = useState(null);
-  const API_KEY = "a0d0f0c32af342db80cee5a02d66c55a";
+  const API_KEY = process.env.REACT_APP_SPOONACULAR_API_KEY;
 
   useEffect(() => {
     axios
@@ -27,7 +27,7 @@ export default function RecipeDetails() {
     <div className="recipe-details-container">
       <h2 className="detail-title">{recipeDetails.title}</h2>
       <div className="preparation-container">
-        <img src={Time} alt={recipeDetails.readyInMinutes}/>
+        <img src={Time} alt={recipeDetails.readyInMinutes} />
         <p>
           <strong>Preparation</strong>: {recipeDetails.readyInMinutes} minutes
         </p>
