@@ -8,10 +8,6 @@ export default function Footer() {
         Benedetto Caiazzo 2023. All rights reserved
       </small>
       <img src={ImpactLogo} className="s2i-logo" alt={ImpactLogo} />
-      <div className="footer-logo-container">
-        <img className="logo-image" src={Logo} alt={Logo}/>
-        <h1 className="title">Green Bites</h1>
-      </div>
     </div>
   );
 }

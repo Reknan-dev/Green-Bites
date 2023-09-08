@@ -64,6 +64,7 @@ body {
 }
 
 .banner-title {
+  max-width: 100%;
   width: 650px;
   position: absolute;
   font-size: 42px;
@@ -131,17 +132,18 @@ body {
 .grid-recipe {
   display: grid;
   gap: 50px;
-  margin-top: 100px;
   background-color: white;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  
 }
+
 
 .card-recipe {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .description-container {
@@ -248,7 +250,7 @@ ul li {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: rgb(242, 242, 242);
   border-radius: 5px;
 
 }
@@ -262,6 +264,7 @@ ul li {
   align-items: center;
   justify-content: space-around;
   border-top: 10px solid rgb(40, 114, 51);
+  
 }
 
 .s2i-logo {
@@ -274,7 +277,14 @@ ul li {
   color: black;
 }
 
-.footer-logo-container {
-  display: flex;
-  
+
+
+@media (max-width: 480px) {
+  .banner-title {
+    font-size: 26px;
+  }
+
+  .s2i-logo {
+    padding-right: 10px;
+  }
 }
