@@ -66,7 +66,7 @@ I created this web app for my studies at Start2Impact University, as a practice 
 
 ### Built With
 
-[![My Skills](https://skills.thijs.gg/icons?i=html,css,js,&theme=light)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=html,css,js,react,&theme=light)](https://skills.thijs.gg)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
