@@ -11,18 +11,14 @@ Web App
 <br />
 
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&pause=1000&center=true&vCenter=true&width=435&lines=City+Life" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&pause=1000&center=true&vCenter=true&width=435&lines=Green+Bites" alt="Typing SVG" /></a>
 </div>
 <br />
 
 
 
   <p align="center">
-    Whether you're a tourist looking for the best vacation destination, a professional evaluating a potential job opportunity,
-      or simply a curious individual eager to learn more about
-      your own city, City Life is here to assist you.
-      Enter the name of your city in the search bar, and within moments, you'll see a list of categories,
-      each with a score that reflects the quality and benchmark features.
+Explore a wide range of delicious and healthy vegetarian recipes with Green Bites. Whether you're a long-time vegetarian or simply looking to try something new and healthy, we have something to suit all tastes. Use our intuitive search bar to find exactly what you're looking for or get inspired by our most popular dishes. Each recipe comes with detailed instructions and an ingredient list to make your culinary journey simple and enjoyable. Dive into the world of vegetarian food and discover new flavors with Green Bites.
     <br />
     <a href="https://github.com/Reknan-dev/City-Life"><strong>Explore the docs »</strong></a>
     <br />
