@@ -231,7 +231,7 @@ ul li {
 }
 
 
-
+.instructions-title,
 .ingredients-title,
 .detail-title {
   color: orange;
@@ -245,6 +245,19 @@ ul li {
 
 
 
+}
+
+.instructions-container {
+  max-width: 100%;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.instructions {
+  margin-bottom: 20px;
 }
 
 .search-results {

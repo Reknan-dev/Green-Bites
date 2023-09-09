@@ -42,6 +42,12 @@ export default function RecipeDetails() {
           ))}
         </ul>
       </div>
+      {recipeDetails.instructions && (
+          <div className="instructions-container">
+            <h3 className="instructions-title">Instructions:</h3>
+            <p className="instructions">{recipeDetails.instructions}</p>
+          </div>
+        )}
       <img
         className="recipe-details-image"
         src={recipeDetails.image}
