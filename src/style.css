@@ -1,21 +1,29 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
-
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  margin: 0;
   font-family: 'Lato', sans-serif;
   background-image: linear-gradient(to top, rgb(193, 223, 196) 0%, rgb(222, 236, 221) 100%);
-  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Header */
+.header {
+  background-image: linear-gradient(to bottom, rgb(60, 186, 146) 0%, rgb(40, 114, 51) 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
+  margin: 0;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
-  text-shadow: 1px 1px 1px black;
   border: 1px solid orange;
   padding: 5px;
   border-top-right-radius: 4px;
@@ -23,6 +31,7 @@ body {
   height: 50px;
   display: flex;
   align-items: center;
+  text-shadow: 1px 1px 1px black;
 }
 
 .logo-image {
@@ -35,15 +44,7 @@ body {
   border-bottom-left-radius: 4px;
 }
 
-.header {
-  background-image: linear-gradient(to bottom, rgb(60, 186, 146) 0%, rgb(40, 114, 51) 100%);
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
+/* Banner */
 .banner-container {
   position: relative;
   display: flex;
@@ -53,11 +54,9 @@ body {
   width: 100%;
   border-top: none;
   background-color: beige;
-  padding: 50px 0 50px 0;
+  padding: 50px 0;
   box-shadow: 0px 5px 15px -5px black;
-
 }
-
 
 .banner-image {
   width: 100%;
@@ -76,8 +75,7 @@ body {
   padding: 15px;
 }
 
-
-
+/* Search Bar */
 .search {
   width: 100%;
   display: flex;
@@ -109,7 +107,6 @@ body {
 
 .search-recipe::placeholder {
   font-family: 'Lato', sans-serif;
-
 }
 
 .search-button {
@@ -129,6 +126,7 @@ body {
   width: 25px;
 }
 
+/* Recipe List & Cards */
 .grid-recipe {
   display: grid;
   gap: 50px;
@@ -136,7 +134,6 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   margin-top: 20px;
 }
-
 
 .card-recipe {
   display: flex;
@@ -159,9 +156,7 @@ body {
 .recipe-name {
   color: brown;
   text-align: center;
-
 }
-
 
 .recipe-image {
   width: 300px;
@@ -184,7 +179,7 @@ body {
   background-color: rgb(177, 98, 98);
 }
 
-
+/* Recipe Details */
 .recipe-details-container {
   display: flex;
   flex-direction: column;
@@ -195,9 +190,33 @@ body {
   background-color: white;
   margin-top: 20px;
   padding-bottom: 50px;
-
 }
 
+.detail-title,
+.instructions-title,
+.ingredients-title {
+  color: orange;
+  margin-left: 10px;
+}
+
+.preparation-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.preparation-container > img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.ingredients-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .recipe-details li::before {
   content: "";
@@ -215,44 +234,9 @@ ul li {
   margin-top: 10px;
 }
 
-
-.preparation-container {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-
-}
-
-.preparation-container>img {
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-
-}
-
-
-.instructions-title,
-.ingredients-title,
-.detail-title {
-  color: orange;
-  margin-left: 10px;
-
-}
-
-.ingredients-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
 .recipe-details-image {
   max-width: 100%;
   width: 500px;
-
-
-
 }
 
 .instructions-container {
@@ -260,7 +244,7 @@ ul li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 80% ;
+  width: 80%;
   line-height: 25px;
 }
 
@@ -268,6 +252,7 @@ ul li {
   margin-bottom: 20px;
 }
 
+/* Search Results */
 .search-results {
   font-size: 1.2em;
   font-weight: bold;
@@ -277,9 +262,9 @@ ul li {
   text-align: center;
   background-color: rgb(242, 242, 242);
   border-radius: 5px;
-
 }
 
+/* Footer */
 .footer {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
   background-blend-mode: multiply, multiply;
@@ -289,7 +274,6 @@ ul li {
   align-items: center;
   justify-content: space-around;
   border-top: 10px solid rgb(40, 114, 51);
-  
 }
 
 .s2i-logo {
@@ -307,7 +291,7 @@ ul li {
   background-color: white;
 }
 
-
+/* Media Queries */
 @media (max-width: 480px) {
   .banner-title {
     font-size: 26px;
