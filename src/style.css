@@ -239,6 +239,14 @@ ul li {
 
 }
 
+.ingredients-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
 .recipe-details-image {
   max-width: 100%;
   width: 500px;
@@ -248,12 +256,12 @@ ul li {
 }
 
 .instructions-container {
-  max-width: 100%;
-  width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 80% ;
+  line-height: 25px;
 }
 
 .instructions {

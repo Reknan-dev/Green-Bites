@@ -19,7 +19,7 @@ export default function RecipeDetails() {
       .catch((error) => {
         console.error("Error fetching the recipe details:", error);
       });
-  }, [id, API_KEY]); //
+  }, [id, API_KEY]);
 
   if (!recipeDetails) return <div className="loading">Loading...</div>;
 
@@ -34,20 +34,23 @@ export default function RecipeDetails() {
       </div>
       <div className="ingredients-container">
         <h3 className="ingredients-title">Ingredients:</h3>
-      </div>
-      <div className="ingredients">
-        <ul className="recipe-details">
-          {recipeDetails.extendedIngredients.map((ingredient) => (
-            <li key={ingredient.id}>{ingredient.original}</li>
-          ))}
-        </ul>
+        <div className="ingredients">
+          <ul className="recipe-details">
+            {recipeDetails.extendedIngredients.map((ingredient) => (
+              <li key={ingredient.id}>{ingredient.original}</li>
+            ))}
+          </ul>
+        </div>
       </div>
       {recipeDetails.instructions && (
-          <div className="instructions-container">
-            <h3 className="instructions-title">Instructions:</h3>
-            <p className="instructions">{recipeDetails.instructions}</p>
-          </div>
-        )}
+        <div className="instructions-container">
+          <h3 className="instructions-title">Instructions:</h3>
+          <div
+            className="instructions"
+            dangerouslySetInnerHTML={{ __html: recipeDetails.instructions }}
+          />
+        </div>
+      )}
       <img
         className="recipe-details-image"
         src={recipeDetails.image}
