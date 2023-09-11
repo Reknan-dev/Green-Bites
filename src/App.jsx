@@ -20,7 +20,6 @@ function SearchContainer() {
     dispatch(fetchRecipes(term));
     dispatch(setSearchTerm(term));
     navigate("/");
-    console.log("API Key:", process.env.REACT_APP_SPOONACULAR_API_KEY);
   };
   return <SearchBar onSearch={handleSearch} />;
 }
